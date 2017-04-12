@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="computational-text-analysis-and-visualization" class="slide level1">
+<h1>Computational Text Analysis and Visualization</h1>
+</section>
+<section id="bio" class="slide level1">
+<h1>Bio</h1>
+<ul>
+<li>Jonathan Reeve, grad student, Department of English and Comparative Literature</li>
+<li>Specializing in computational literary analysis</li>
+<li>Member, Group for Experimental Methods in the Humanities</li>
+<li>Meets every Friday, 3-5pm, Studio@Butler</li>
+</ul>
+</section>
+<section id="examples" class="slide level1">
+<h1>Examples</h1>
+</section>
+<section class="slide level1">
+
+<p>Stanford Literary Lab</p>
+<figure>
+<img src="images/moretti.gif" alt="Network Analysis of Hamlet Characters" /><figcaption>Network Analysis of Hamlet Characters</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<p>Matt Daniels</p>
+<figure>
+<img src="images/rap-lyrics.png" alt="Vocabulary of Rap Lyrics" /><figcaption>Vocabulary of Rap Lyrics</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<p>Andreas Mueller</p>
+<figure>
+<img src="images/alice.png" alt="Alice’s Adventures in Wonderland: Word Cloud" /><figcaption>Alice’s Adventures in Wonderland: Word Cloud</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<p>Stanford Literary Lab</p>
+<figure>
+<img src="images/loudness.png" alt="Loudness in Pride and Prejudice" /><figcaption>Loudness in Pride and Prejudice</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="images/shakespeare-pca.png" alt="Principal Component Analysis of Shakespeare Character Types" /><figcaption>Principal Component Analysis of Shakespeare Character Types</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<p>Programmatic Generation of Socratic Dialogues</p>
+<p><em>Socrates</em>: Do you came down, attain immortality as we must first make the longest ears—No, Phaedrus, then pray to agree and writing speeches.</p>
+<p><em>Phaedrus</em>: Certainly. Yes, certainly. What he must speak then I think he speaks is being guided about, which you mean?</p>
+<p><em>Socrates</em>: Do you seem less sense about rhetoric.</p>
+<p><em>Phaedrus</em>: True. What?</p>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="images/gatsby.png" alt="Principal Component Analysis of Characters from The Great Gatsby" /><figcaption>Principal Component Analysis of Characters from <em>The Great Gatsby</em></figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="images/allusions.png" alt="Detection of Biblical and Classical Allusions, Plotted Diachronically" /><figcaption>Detection of Biblical and Classical Allusions, Plotted Diachronically</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="images/milton-colors.png" alt="Color Words in Paradise Lost, by Section" /><figcaption>Color Words in Paradise Lost, by Section</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="images/mr-darcy.png" alt="Dependency Parsing" /><figcaption>Dependency Parsing</figcaption>
+</figure>
+</section>
+<section id="lets-do-it-ourselves" class="slide level1">
+<h1>Let’s do it ourselves!</h1>
+<p>You’ll need these software ingredients:</p>
+<ul>
+<li>Python 3</li>
+<li>NLTK for Python 3</li>
+<li>Pandas for Python 3</li>
+<li>Wordcloud for Python 3</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p>Ways to use that software:</p>
+<ul>
+<li>On your computer (recommended)</li>
+<li>On DHBox.org (temporary)</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p>Links:</p>
+<ul>
+<li>The Jupyter notebook we’ll be using: http://bit.ly/dh-dataviz</li>
+<li>DHBox: http://dhbox.org (U: dataviz-workshop PW: dataviz-2016)</li>
+<li>The free online NLTK book: http://nltk.org/book</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
