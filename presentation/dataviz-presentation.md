@@ -68,6 +68,14 @@ Programmatic Generation of Socratic Dialogues
 
 --- 
 
+![Word Embeddings](images/word-vectors.png)
+
+---
+
+![Document Vectors](images/document-vectors.png)
+
+---
+
 #Let’s do it ourselves!
 
 You’ll need these software ingredients: 
